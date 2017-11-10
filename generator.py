@@ -5,7 +5,7 @@ def generate_dots(num, width, height):
     yield tuple of x, y coordinates
     '''
     for _ in range(num):
-        yield randint(1, width), randint(1, height)
+        yield randint(0, width), randint(0, height)
 
 def generate_graph(dots, neighboorhood_size, distance_range=(10, 100)):
     '''
