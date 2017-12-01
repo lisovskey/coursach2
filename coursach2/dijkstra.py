@@ -1,3 +1,6 @@
+'''
+Dijkstra algorithm implementation
+'''
 from collections import defaultdict
 
 def generate_dijkstra_tree(nodes, root='root'):

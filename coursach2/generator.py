@@ -1,3 +1,6 @@
+'''
+Generation helpers
+'''
 from random import randint
 
 def generate_dots(num, width, height):
