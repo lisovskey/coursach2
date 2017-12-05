@@ -1,6 +1,6 @@
 # <p align="center">Coursach2 of the Mad</p>
 ### Subject
-Search of the shortest path in graph
+Search of the shortest path in a graph
 
 ### Search method
 Dijkstra's algorithm
