@@ -1,7 +1,9 @@
 '''
 Generation helpers
 '''
+import math
 from random import randint
+
 
 def generate_dots(num, width, height):
     '''
@@ -20,8 +22,7 @@ def generate_graph(dots, neighbourhood_size, distance_range=(10, 100)):
         '''
         if graph.get(neighbour_id):
             return graph[neighbour_id][node_id]
-        else:
-            return randint(*distance_range)
+        return randint(*distance_range)
 
     graph = {}
     for node_id, _ in enumerate(reversed(dots)):

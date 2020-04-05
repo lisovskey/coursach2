@@ -3,6 +3,7 @@ Dijkstra algorithm implementation
 '''
 from collections import defaultdict
 
+
 def generate_dijkstra_tree(nodes, root='root'):
     '''
     yield pair of neighbours
@@ -11,12 +12,7 @@ def generate_dijkstra_tree(nodes, root='root'):
         '''
         return node with lowest weight
         '''
-        closest_node = None
-        for node in weights:
-            if (weights[node] < weights.get(closest_node, float('inf'))
-                    and node not in processed):
-                closest_node = node
-        return closest_node
+        return min(node for node in weights.items() if node not in processed, key=weights.get)
 
     processed = set()
     weights = defaultdict(lambda: float('inf'), nodes[root])
